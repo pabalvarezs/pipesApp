@@ -3,9 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
-//primeNg
-import {ButtonModule} from 'primeng/button';
-import {CardModule} from 'primeng/card';
+import { PrimeNgModule } from './prime-ng/prime-ng.module';
+
+// //primeNg
+// import {ButtonModule} from 'primeng/button';
+// import {CardModule} from 'primeng/card';
 
 
 
@@ -15,8 +17,8 @@ import {CardModule} from 'primeng/card';
   ],
   imports: [
     BrowserModule,
-    ButtonModule,
-    CardModule
+    PrimeNgModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
