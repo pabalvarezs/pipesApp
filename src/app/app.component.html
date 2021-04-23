@@ -8,7 +8,20 @@
 </div>
 
 <button pButton 
-(click)="mostrarNombre()"
-label="Cambiar Nombre" >
+  (click)="mostrarNombre()"
+  label="Cambiar Nombre"
+  icon="pi pi-check"
+  iconPos="right" 
+  class="p-button-help">
 </button>
+
+<br>
+<br>
+
+
+<p-card 
+  subheader = "esto es un subheader"
+  [header] = "nombre | titlecase">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
+</p-card>
 
