@@ -1,3 +1,4 @@
+import { stringify } from '@angular/compiler/src/util';
 import { Component } from '@angular/core';
 import { PrimeNGConfig } from 'primeng/api';
 
@@ -19,7 +20,7 @@ export class NoComunesComponent  {
   }
   // i18nplural
 
-  clientes : string[] = ['María'];
+  clientes : string[] = ['María','Pedro','Fernando'];
   
   // ['María','Pedro','Fernando']
   clientesMapa = {
@@ -27,6 +28,22 @@ export class NoComunesComponent  {
     '=1': 'tenemos un cliente esperando',
     '=2': 'tenemos 2 clientes esperando',
     'other': 'tenemos # clientes esperando'
+  }
+
+
+  cambiarCliente() : void{
+
+    this.nombre = 'Pablo';
+    this.genero = 'masculino';
+
+    console.log(this.nombre);
+    
+  }
+
+  borrarCliente(): void{
+    this.clientes.pop();
+    console.log(this.clientes);
+
   }
 
 }

@@ -13,11 +13,22 @@
             <h4>Saludos {{nombre}}, es un placer 
                 {{ genero |i18nSelect:invitacionMapa }}
                  a nuestro evento</h4>
+            <button pButton type="button" label="Cambiar Cliente" 
+                iconPos="left" 
+                icon="pi pi-users"
+                class="p-button-help"
+                (click)="cambiarCliente()"></button>
+
         </p-fieldset>
     </div>
 
     <div class="p-col p-md-6">
         <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
             <h4>Actualmente  {{ clientes.length |i18nPlural:clientesMapa }} </h4>
+            <button pButton type="button" label="Borrar Cliente" 
+            iconPos="left" 
+            icon="pi pi-user-minus"
+            class="p-button-help"
+            (click)="borrarCliente()"></button>
         </p-fieldset>
     </div>
