@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 
 import { SharedModule } from './shared/shared.module';
 import { AppRouterModule } from './app-router.module';
+import { VentasModule } from './ventas/ventas.module';
 
 
 
@@ -22,7 +23,8 @@ import { AppRouterModule } from './app-router.module';
   imports: [
     AppRouterModule,
     BrowserModule,
-    SharedModule
+    SharedModule,
+    VentasModule
 
   ],
   providers: [],
