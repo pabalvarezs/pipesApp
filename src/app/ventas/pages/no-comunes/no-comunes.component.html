@@ -32,7 +32,7 @@
             (click)="borrarCliente()"></button>
         </p-fieldset>
     </div>
-    <div class="p-col p-md-12">
+    <div class="p-col p-md-6">
         <p-fieldset legend="Slice Pipe" [toggleable]="true">
             <b>Original:</b>
             <pre>{{clientes}}</pre>
@@ -54,6 +54,13 @@
             <b>slice:1:4</b>
             <pre>{{nombre | slice:0:3}}</pre>  
 
+        </p-fieldset>
+    </div>
+    <div class="p-col p-md-6">
+        <p-fieldset legend="Slice Pipe" [toggleable]="true">
+            <ul *ngFor="let item of persona | keyvalue">
+                <b>{{item.key | titlecase}}: </b>{{item.value}}
+            </ul>
         </p-fieldset>
     </div>
 </div>
