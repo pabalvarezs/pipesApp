@@ -1,6 +1,7 @@
 import { stringify } from '@angular/compiler/src/util';
 import { Component } from '@angular/core';
-import { PrimeNGConfig } from 'primeng/api';
+
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-comunes',
@@ -71,5 +72,18 @@ export class NoComunesComponent  {
     }
 
    ]
+
+  //  Async Pip
+
+  miObservable = interval(2000); // 0.1.2.3.4
+  
+  valorPromesa = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+      resolve('Tenemos data de promesa')
+
+    },3500);
+
+  });
+
 
 }
