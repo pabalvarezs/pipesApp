@@ -13,4 +13,7 @@ export class BasicosComponent  {
   nombreCompleto : string = 'PaBlO';
 
 
+  fecha : Date = new Date();
+
+
 }
