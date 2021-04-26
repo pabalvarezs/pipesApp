@@ -7,15 +7,17 @@
 
 
 <div class="p-grid">
+
     <div class="p-col p-md-6">
         <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
-            <h3>Saludos {{nombre}}, es un placer 
+            <h4>Saludos {{nombre}}, es un placer 
                 {{ genero |i18nSelect:invitacionMapa }}
-                 a nuestro evento</h3>
+                 a nuestro evento</h4>
         </p-fieldset>
     </div>
+
     <div class="p-col p-md-6">
         <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
-            Content
+            <h4>Actualmente  {{ clientes.length |i18nPlural:clientesMapa }} </h4>
         </p-fieldset>
-    </div></div>
+    </div>
