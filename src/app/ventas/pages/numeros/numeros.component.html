@@ -20,7 +20,31 @@
                 <br>
                 <i class="pi pi-dollar"></i>
                 {{ventasNetas | number:'':'en'}}
-                
+
+        </p-card>
+    </div>
+    <div class="p-col-4">
+        <p-card header="Ventas Brutas"
+                subheader="del presente año">
+                {{ventasNetas + 2000000}}
+                <br>
+                {{(ventasNetas + 2000000) | currency:'clp$'}}
+                <br>
+                {{(ventasNetas + 2000000) | currency:'CLP':'symbol-narrow'}}
+                <br>
+                {{(ventasNetas + 2000000) | currency:'CAD':'symbol-narrow':'1.4-4'}}
+        </p-card>
+    </div>
+    <div class="p-col-4">
+        <p-card header="Ganancia %"
+                subheader="del presente año">
+                {{porcentaje}}
+                <br>
+                {{porcentaje | percent}}
+                <br>
+                {{porcentaje | percent:'3.4-4'}}
+                <br>
+                {{porcentaje | percent:'3.4'}}
         </p-card>
     </div>
 </div>
