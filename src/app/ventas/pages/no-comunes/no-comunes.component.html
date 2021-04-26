@@ -63,4 +63,14 @@
             </ul>
         </p-fieldset>
     </div>
+    <div class="p-col p-md-12">
+        <p-fieldset legend="Json Pipe" [toggleable]="true">
+            <pre>
+                {{persona | json}}
+            </pre>
+            <pre>
+                {{heroes | json}}
+            </pre>
+        </p-fieldset>
+    </div>
 </div>
