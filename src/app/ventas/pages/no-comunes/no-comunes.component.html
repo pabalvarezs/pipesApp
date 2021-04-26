@@ -63,7 +63,7 @@
             </ul>
         </p-fieldset>
     </div>
-    <div class="p-col p-md-12">
+    <div class="p-col p-md-6">
         <p-fieldset legend="Json Pipe" [toggleable]="true">
             <pre>
                 {{persona | json}}
@@ -73,7 +73,7 @@
             </pre>
         </p-fieldset>
     </div>
-    <div class="p-col p-md-12">
+    <div class="p-col p-md-6">
         <p-fieldset legend="Async Pipe" [toggleable]="true">
             <pre *ngIf="!(miObservable | async)">Resolviendo Observable....</pre>
             <pre>{{miObservable | async}}</pre>  
