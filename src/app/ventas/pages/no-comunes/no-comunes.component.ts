@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
@@ -7,13 +7,14 @@ import { PrimeNGConfig } from 'primeng/api';
   styles: [
   ]
 })
-export class NoComunesComponent implements OnInit {
+export class NoComunesComponent  {
 
-  constructor() { }
+  nombre : string = 'Laura';
+  genero : string = 'femenino';
 
-  ngOnInit(): void {
-
-
+  invitacionMapa = {
+    'masculino':'invitarlo',
+    'femenino': 'invitarla'
   }
 
 }
